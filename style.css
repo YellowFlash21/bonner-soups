@@ -1,0 +1,561 @@
+:root {
+
+    --main-bg-color: white;
+    --main-text-color: rgb(19, 19, 19);
+
+    --home-bg-color: rgb(253, 204, 171);
+    --about-bg-color: hsl(26, 83%, 84%);
+    --advantages-bg-color: rgb(255, 255, 255);
+    --menu-bg-color: #daeac5;
+
+
+
+
+
+}
+
+
+
+body {
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    gap: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    font-size: 1rem;
+    color: rgb(67, 67, 67);
+}
+
+.home {
+    background-color: var(--home-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    background-color: var(--about-bg-color);
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.sides {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10%;
+}
+
+.side {
+    width: 30vw;
+
+}
+
+
+.pill {
+    background-color: rgb(188, 238, 87);
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 20px;
+
+
+}
+
+.pill1 {
+    background-color: violet;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+
+
+}
+
+.pill2 {
+    background-color: rgb(99, 99, 238);
+    border-radius: 30px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.button-try {
+    background: linear-gradient(rgb(250, 134, 92), rgb(253, 77, 33));
+    border-radius: 20px;
+    padding: 12px 25px 12px 25px;
+    margin: 30px;
+    border-style: none;
+    color: rgb(255, 204, 192);
+    clear: both;
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+
+.button-try:hover {
+    cursor: pointer;
+    background: rgb(253, 77, 33);
+    color: aqua;
+    
+}
+
+.photo1 {
+    width: 100%;
+}
+
+
+.description1 {
+    font-size: 36px;
+    color: rgb(70, 56, 122);
+    margin-left: 20px;
+}
+
+
+
+.subtitle {
+    font-size: 20;
+    color: rgb(250, 134, 92);
+    text-align: left;
+    margin-left: 20px;
+}
+
+header nav ul {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: none;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(62, 56, 43);
+}
+a:hover{
+    color:lightcoral;
+}
+
+
+.headbutton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-decoration: none;
+    background-color: white;
+}
+
+.basket-count {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 1px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    position: absolute;
+    display: inherit;
+    top: 22px;
+}
+
+.about-us {
+
+    background-color: rgb(253, 241, 232);
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pro-nas {
+
+
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+
+
+.description2 {
+    font-size: 20px;
+    color: darkcyan;
+    margin-left: 10%;
+    display: flex;
+    /* width: 50%; */
+    z-index: 2;
+
+}
+
+.title2 {
+
+    color: rgb(173, 55, 78);
+    font-size: 35px;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-left: 10%;
+}
+
+.subtitle {
+    margin-left: 10%;
+    font-size: 25px;
+
+}
+
+
+
+
+.button-about {
+
+    background: linear-gradient(rgb(163, 227, 255), rgb(108, 203, 244));
+    border-radius: 30px;
+    display: inline;
+    padding: 12px 25px 12px 25px;
+    margin: 10%;
+    border-style: none;
+    color: rgb(253, 241, 232);
+    clear: both;
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+    width: 50%;
+    z-index: 2;
+
+}
+
+.button-about:hover {
+    background: rgb(101, 196, 237);
+
+}
+
+.button-about:hover+.cicle-deco {
+    /* padding: 70px;  */
+    transform: scale(20.0);
+
+}
+
+.cicle-deco {
+
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 1px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    position: absolute;
+    display: inherit;
+    margin-bottom: -376px;
+    left: 226px;
+    /* top: 20px; */
+    z-index: 0;
+
+
+
+
+}
+
+.advantages {
+    background-color: var(--advantages-bg-color);
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1144px;
+
+
+}
+
+.advantages h2 {
+
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.advantages-container h3 {
+    display: flex;
+
+    text-align: left;
+    font-size: 25px;
+}
+
+.advantages-container {
+    width: 45%;
+    display: flex;
+    text-align: left;
+
+    flex-wrap: wrap;
+}
+
+.menu {
+    background: var(--menu-bg-color);
+    margin: auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.cups {
+   /* grid-template-columns: repeat(5, 1fr);*/
+   margin: 0;
+   padding: 0;
+    display: flex;
+margin-bottom: 40px;
+flex-wrap: wrap;
+}
+
+
+.menu .pill {
+    background-color: white;
+    margin: 0;
+    padding: 5px;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+
+}
+
+.item-cup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+
+.cup-gif {
+    position: relative;
+    width: 223px;
+    height: 310px;
+    transform: scale(0.8);
+    background-size:auto;
+    
+}
+
+
+.mushrooms {
+    background-image: url('/assets/bonner_soup_mushroom.jpg');
+    /* background-size: contain; */
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.mushrooms:hover {
+
+
+    background-image: url("/assets/bonner_soup_mushroom.gif");
+    cursor: pointer;
+}
+
+.pea {
+    background-image: url('/assets/bonner_soup_pea.jpg');
+    /* background-size: contain; */
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.pea:hover {
+
+
+    background-image: url("/assets/bonner_soup_pea.gif");
+    cursor: pointer;
+}
+
+.pumpkin {
+    background-image: url('/assets/bonner_soup_pumpkin.jpg');
+    /* background-size: contain; */
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.pumpkin:hover {
+
+
+    background-image: url("/assets/bonner_soup_pumpkin.gif");
+    cursor: pointer;
+}
+
+.soch {
+    background-image: url('/assets/bonner_soup_soch.jpg');
+    /* background-size: contain; */
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.soch:hover {
+
+
+    background-image: url("/assets/bonner_soup_soch.gif");
+    cursor: pointer;
+
+}
+
+.kharcho {
+    background-image: url('/assets/bonner_soup_kharcho.jpg');
+    /* background-size: contain; */
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.kharcho:hover {
+
+
+    background-image: url("/assets/bonner_soup_kharcho.gif");
+    cursor: pointer;
+
+}
+
+.pepper {
+    background-image: url('/assets/bonner_porridge_pepper.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.pepper:hover {
+    background-image: url("/assets/bonner_porridge_pepper.gif");
+    cursor: pointer;
+}
+
+.basil {
+    background-image: url('/assets/bonner_porridge_basil.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.basil:hover {
+    background-image: url("/assets/bonner_porridge_basil.gif");
+    cursor: pointer;
+}
+
+.classic {
+    background-image: url('/assets/bonner_porridge_classics.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.classic:hover {
+
+
+    background-image: url("/assets/bonner_porridge_classics.gif");
+    cursor: pointer;
+
+}
+
+.ginger {
+    background-image: url('/assets/bonner_porridge_ginger.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.ginger:hover {
+
+
+    background-image: url("/assets/bonner_porridge_ginger.gif");
+    cursor: pointer;
+
+}
+
+.porridge-mushroom {
+    background-image: url('/assets/bonner_porridge_mushrooms.jpg');
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.porridge-mushroom:hover {
+
+
+    background-image: url("/assets/bonner_porridge_mushrooms.gif");
+    cursor: pointer;
+
+}
+
+.footer {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.downbutton {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-list {
+    display: flex;
+    text-align: start;
+    gap: 5vw;
+justify-content: center;
+
+
+}
+
+.pay-cards {
+    display: flex;
+    height: 100px;
+    
+}
+
+.bi-facebook {
+    background-color: var(--menu-bg-color);
+    color: var(--main-bg-color);
+    padding: 5px;
+    font-size: 20px;
+}
+.bi-instagram {
+    background-color: var(--menu-bg-color);
+    color: var(--main-bg-color);
+    padding: 5px;
+    font-size: 20px;
+}
