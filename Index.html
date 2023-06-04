@@ -12,17 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <style>
-
-
-    </style>
-
 </head>
-
 
 <body>
     <header>
-        <nav>
+        <nav id="top-nav"   >
             <ul>
                 <li class="headbutton"><a href="#about">Про нас</a></li>
                 <li class="headbutton"><a href="#about">Ассортимент</a></li>
@@ -34,18 +28,26 @@
                 </li>
                 <li class="headbutton"><a href="#buisiness">Для партнерів</a></li>
                 <li class="headbutton"><a href="#about">Контакти</a></li>
-                <li> <a href=""><i class="bi bi-cart-plus-fill"></i>
-                        <div class="basket-count">22</div>
-                    </a></li>
+                <li> 
+                    <a href="">
+                        <i class="bi bi-cart-plus-fill"></i>
+                        <span class="basket-count">22</span>
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
+        <a href="javascript:void(0);" class="burger-menu-icon" onclick="showMenu()">
+            <i class="bi bi-list" style="font-size: 2.5rem;"></i>
+        </a>
     </header>
     <section class="home">
         <div class="side">
             <p class="description1"><span>Смачний, натуральний крем-суп, який</span>
                 <br>
                 <span>готується за 1 хвилину!</span>
-            </p>
+            </p> 
             <div class="pageone">
                 <span class="pill" id="pill">100% Натуральний продукт</span>
                 <span class="pill1">Vegan</span>
@@ -58,11 +60,10 @@
         </div>
 
     </section>
-
     <section class="about-us" id="about">
 
         <div class="side pro-nas">
-
+        <div>
             <h2 class="title2">ПРО НАС</h2>
             <h3 class="subtitle"> Ми створили супчики з метою зробити швидке харчування корисним.</h3>
             <p class="description2">
@@ -72,16 +73,16 @@
                 в
                 зручний стаканчик, щоб вам було зручно смакувати супчиком, просто додавши воду.
             </p>
-
+</div>
 
 
             <button class="button-try button-about">Отримати пропозицію</button>
             <div class="cicle-deco"></div>
 
         </div>
-
+<div>
         <img class="side" src="./assets/bonnercup2.jpg" alt="2 cups">
-
+    </div>
     </section>
     <section class="advantages" id="advantages">
         <h2>Переваги продукту</h2>
@@ -124,17 +125,6 @@
                 Ми обрали найкращих представників бобових: нут, сочевицю та горох. В одній порції супчика понад 80%
                 бобових, що робить його максимально білковим та поживним.</p>
         </div>
-
-
-
-
-
-
-
-
-
-
-
     </section>
     <section class="menu" id="menu">
         <h2>СУПЧИКИ ТА КАШІ</h2>
@@ -159,80 +149,72 @@
             </div>
             <div class="item-cup">
                 <figure class="cup-gif soch">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Сочевичний </h3>
             </div>
             <div class="item-cup">
                 <figure class="cup-gif kharcho">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Харчо </h3>
             </div>
             <div class="item-cup">
                 <figure class="cup-gif pepper">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Гарбуз та Перець </h3>
             </div>
             <div class="item-cup">
                 <figure class="cup-gif basil">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Родзинки та Базилік </h3>
             </div>
             <div class="item-cup">
                 <figure class="cup-gif classic">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Класична з Овочами</h3>
             </div>
             <div class="item-cup">
                 <figure class="cup-gif ginger">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Марроко с Імбиром </h3>
             </div>
             <div class="item-cup">
                 <figure class="cup-gif porridge-mushroom">
-                   <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
+                    <!--  <img src="/assets/bonner_soup_soch.jpg" alt="cup mushrooms"> -->
                 </figure>
                 <h3 class="pill">Класична з Грибами </h3>
             </div>
-            
-            </div>
+
+        </div>
         </div>
 
 
 
     </section>
-    <footer class="footer" id="buisiness">
+      <footer class="footer" id="buisiness"> 
         <div class="footer-list">
             <ul class="footer-item">
                 <li class="headbutton downbutton"><a href="#about">Контакти</a></li>
                 <li class="headbutton downbutton"><a href="#about">Для партнерів</a></li>
                 <li class="headbutton downbutton"><a href="#about">Про нас</a></li>
-            
                 <li class="headbutton downbutton"><a href="#about">Асортимент</a></li>
                 <li class="headbutton downbutton"><a href="#about">Блог</a></li>
                 <li class="headbutton downbutton"><a href="#about">Доставка та Оплата</a></li>
-               
             </ul>
-
-
             <div class="footer-item">
                 <h2>ВІДДІЛ ЗБУТУ</h2>
                 <p>Тел:<a href="">+38 (073) 422 76 62</a></p>
                 <p>Email:<a href="">bioproducts.sales@gmail.com</a></p>
-
             </div>
             <div class="footer-item">
                 <h2>ПІДТРИМКА СПОЖИВАЧІВ</h2>
-              
                 <p>Email:<a href="">bonner.info@gmail.com
-
-                </a>
-                
+                    </a>
             </div>
             <div class="footer-item">
                 <h2>НУМО ТОВАРИШУВАТИ!</h2>
@@ -242,25 +224,29 @@
 
                 <figure class="pay-cards">
                     <img src="/assets/cur-visa.jpg" alt="cards">
-                    
+
                 </figure>
 
             </div>
-            
         </div>
-
-        
-
         <p>© 2020 Bonner, Всi права захищенi.</p>
+    </footer> 
 
-    </footer>
-
-
-
-    
     <script>
+        function showMenu() {
+            console.log("Show menu for mobile");
 
+            let topNav = document.getElementById("top-nav");
+            console.log("topNav:", topNav.style.display);
+
+
+            if (topNav.style.display === "block") {
+                topNav.style.display = "none";
+            } else {
+                topNav.style.display = "block";
+
+            }
+        }
     </script>
 </body>
-
 </html>

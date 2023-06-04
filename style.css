@@ -1,19 +1,13 @@
-:root {
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
+:root {
     --main-bg-color: white;
     --main-text-color: rgb(19, 19, 19);
-
     --home-bg-color: rgb(253, 204, 171);
     --about-bg-color: hsl(26, 83%, 84%);
     --advantages-bg-color: rgb(255, 255, 255);
     --menu-bg-color: #daeac5;
-
-
-
-
-
 }
-
 
 
 body {
@@ -37,6 +31,11 @@ section {
 
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -45,6 +44,17 @@ a {
 header {
     font-size: 1rem;
     color: rgb(67, 67, 67);
+}
+
+.burger-menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+}
+
+.bi-list {
+    display: none;
 }
 
 .home {
@@ -57,7 +67,6 @@ header {
     background-color: var(--about-bg-color);
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -85,8 +94,6 @@ h1 {
     padding: 5px;
     margin: 10px;
     margin-left: 20px;
-
-
 }
 
 .pill1 {
@@ -117,14 +124,13 @@ h1 {
     display: inline-block;
     margin-left: 20px;
     text-decoration: none;
-
 }
 
 .button-try:hover {
     cursor: pointer;
     background: rgb(253, 77, 33);
     color: aqua;
-    
+
 }
 
 .photo1 {
@@ -133,7 +139,7 @@ h1 {
 
 
 .description1 {
-    font-size: 36px;
+    font-size: 2rem;
     color: rgb(70, 56, 122);
     margin-left: 20px;
 }
@@ -164,8 +170,9 @@ nav li {
     text-decoration: none;
     color: rgb(62, 56, 43);
 }
-a:hover{
-    color:lightcoral;
+
+a:hover {
+    color: lightcoral;
 }
 
 
@@ -185,9 +192,9 @@ a:hover{
     margin: 1px;
     font-size: 0.8rem;
     margin-bottom: 5px;
-    position: absolute;
+    position: relative;
     display: inherit;
-    top: 22px;
+    top: -11px;
 }
 
 .about-us {
@@ -212,8 +219,6 @@ a:hover{
 
 }
 
-
-
 .description2 {
     font-size: 20px;
     color: darkcyan;
@@ -221,11 +226,9 @@ a:hover{
     display: flex;
     /* width: 50%; */
     z-index: 2;
-
 }
 
 .title2 {
-
     color: rgb(173, 55, 78);
     font-size: 35px;
     text-align: left;
@@ -239,9 +242,6 @@ a:hover{
     font-size: 25px;
 
 }
-
-
-
 
 .button-about {
 
@@ -258,22 +258,18 @@ a:hover{
     font-size: 18px;
     width: 50%;
     z-index: 2;
-
 }
 
 .button-about:hover {
     background: rgb(101, 196, 237);
-
 }
 
 .button-about:hover+.cicle-deco {
     /* padding: 70px;  */
     transform: scale(20.0);
-
 }
 
 .cicle-deco {
-
     background: #ffffff;
     border-radius: 50%;
     padding: 7px;
@@ -286,10 +282,6 @@ a:hover{
     left: 226px;
     /* top: 20px; */
     z-index: 0;
-
-
-
-
 }
 
 .advantages {
@@ -302,17 +294,13 @@ a:hover{
     gap: 20px;
     max-width: 1144px;
 
-
 }
 
 .advantages h2 {
-
     width: 100%;
     display: flex;
     text-align: center;
     justify-content: center;
-
-
 }
 
 .advantages-container h3 {
@@ -343,12 +331,12 @@ a:hover{
 }
 
 .cups {
-   /* grid-template-columns: repeat(5, 1fr);*/
-   margin: 0;
-   padding: 0;
+    /* grid-template-columns: repeat(5, 1fr);*/
+    margin: 0;
+    padding: 0;
     display: flex;
-margin-bottom: 40px;
-flex-wrap: wrap;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 
@@ -378,8 +366,8 @@ flex-wrap: wrap;
     width: 223px;
     height: 310px;
     transform: scale(0.8);
-    background-size:auto;
-    
+    background-size: auto;
+
 }
 
 
@@ -536,7 +524,7 @@ flex-wrap: wrap;
     display: flex;
     text-align: start;
     gap: 5vw;
-justify-content: center;
+    justify-content: center;
 
 
 }
@@ -544,7 +532,7 @@ justify-content: center;
 .pay-cards {
     display: flex;
     height: 100px;
-    
+
 }
 
 .bi-facebook {
@@ -553,9 +541,73 @@ justify-content: center;
     padding: 5px;
     font-size: 20px;
 }
+
 .bi-instagram {
     background-color: var(--menu-bg-color);
     color: var(--main-bg-color);
     padding: 5px;
     font-size: 20px;
 }
+
+
+/* ADAPTIVE */
+/* for tablet */
+@media (max-width: 576px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .pageone {
+        margin-top: 10px;
+    }
+
+    .side {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .side .description1 {
+        margin-top: 8vw;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* .button-try {
+        padding: 18px 29px 18px 29px;
+    } */
+
+    .bi-list {
+        display: block;
+        right: 0;
+        position: relative;
+
+        top: 0;
+    }
+
+    #top-nav {
+        display: none;
+    }
+
+    #top-nav ul {
+        flex-direction: column;
+    }
+
+    .footer{
+        width: 100%;
+    }
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/* for mobile */
